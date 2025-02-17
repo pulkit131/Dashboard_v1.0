@@ -54,7 +54,7 @@ export default function MainGrid() {
       </Typography>
       <Grid container spacing={2} columns={12} sx={{ mb: (theme) => theme.spacing(2) }}>
         {data.map((card, index) => (
-          <Grid key={index} item xs={12} sm={6} lg={3}>
+          <Grid key={index} item xs={12} sm={6} lg={3} sx={{height:600}}>
             <StatCard {...card} />
           </Grid>
         ))}
